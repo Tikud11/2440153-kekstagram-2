@@ -1,5 +1,6 @@
 import { photosData } from './mock';
-import './photos.js';
+import { setThumbnails } from './photos';
 
-// eslint-disable-next-line no-console
-console.log(photosData);
+const container = document.querySelector('.pictures');
+
+setThumbnails(photosData, container);
