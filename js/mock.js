@@ -34,3 +34,4 @@ const generatePhoto = () => {
 };
 
 export const photosData = Array.from({ length: MAX_PHOTOS_LENGTH }, generatePhoto);
+
