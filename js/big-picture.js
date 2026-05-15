@@ -1,4 +1,3 @@
-// import { photosData } from './mock.js';
 import { initComments } from './comments.js';
 
 const body = document.querySelector('body');
