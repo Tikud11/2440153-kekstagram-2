@@ -1,13 +1,13 @@
-// import { photosData } from './mock.js';
-import { initComments } from './comments.js';
+import { initComments } from './comments';
+import { isEscapeKey } from './utils   ';
 
-const body = document.querySelector('body');
+export const body = document.querySelector('body');
 const bigPicture = document.querySelector('.big-picture');
 const image = bigPicture.querySelector('.big-picture__preview img');
 const likesCount = bigPicture.querySelector('.likes-count');
 const socialCaption = bigPicture.querySelector('.social__caption');
 const cancelBtn = bigPicture.querySelector('.big-picture__cancel');
-const isEscapeKey = (evt) => evt.key === 'Escape';
+
 
 const closeBigPicture = () => {
   bigPicture.classList.add('hidden');
