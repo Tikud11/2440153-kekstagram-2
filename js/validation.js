@@ -4,7 +4,7 @@ const MAX_LENGTH_IMAGE_UPLOAD_COMMENT = 140;
 
 const imageUploadForm = document.querySelector('.img-upload__form');
 const hashtagsInput = imageUploadForm.querySelector('.text__hashtags');
-const hashtagsCommentText = imageUploadForm.querySelector('.text__description');
+const isCommentValid = imageUploadForm.querySelector('.text__description');
 
 const pristineConfig = new Pristine(imageUploadForm, {
   classTo: 'img-upload__field-wrapper',
@@ -59,19 +59,10 @@ pristineConfig.addValidator(
 );
 
 pristineConfig.addValidator(
-  hashtagsCommentText,
+  isCommentValid,
   validCommentTextArea,
   'длина комментария больше 140 символов'
 );
 
 
 export { pristineConfig };
-
-/* <fieldset class="img-upload__text text">
-  <div class="img-upload__field-wrapper">
-    <input class="text__hashtags" name="hashtags" placeholder="#ХэшТег" />
-  </div>
-  <div class="img-upload__field-wrapper">
-    <textarea class="text__description" name="description" placeholder="Ваш комментарий..."></textarea>
-  </div>
-</fieldset> */

@@ -1,5 +1,5 @@
 import { initComments } from './comments';
-import { isEscapeKey } from './utils';
+import { isEscapeKey } from './utils   ';
 
 export const body = document.querySelector('body');
 const bigPicture = document.querySelector('.big-picture');
