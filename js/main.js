@@ -2,7 +2,8 @@ import { photosData } from './mock';
 import { renderThumbnails } from './photos';
 import { renderBigPicture } from './big-picture';
 import './upload-form.js';
-import './validation.js';
+import './image-effects.js';
+
 
 renderThumbnails(photosData);
 
