@@ -52,7 +52,7 @@ imageUploadForm.addEventListener('submit', (evt) => {
   if (isValid) {
     console.log('Форма полностью валидна! Можно отправлять на сервер.');
   } else {
-
+    console.log('Форма не валидна!');
   }
 });
 
