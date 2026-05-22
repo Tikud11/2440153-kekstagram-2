@@ -3,7 +3,12 @@
 
 @font-face {
   font-family: "Open Sans";
+<<<<<<< HEAD
   src: url("../fonts/OpenSansCondensed-Bold.woff2") format("woff2"),
+=======
+  src:
+    url("../fonts/OpenSansCondensed-Bold.woff2") format("woff2"),
+>>>>>>> 9613bb2b03e4cd30c2ddf754a2cf86155b979f4a
     url("../fonts/OpenSansCondensed-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
@@ -12,7 +17,12 @@
 
 @font-face {
   font-family: "Open Sans";
+<<<<<<< HEAD
   src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+=======
+  src:
+    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+>>>>>>> 9613bb2b03e4cd30c2ddf754a2cf86155b979f4a
     url("../fonts/OpenSans-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -966,7 +976,12 @@ main {
 @keyframes spinner {
   0%,
   100% {
+<<<<<<< HEAD
     box-shadow: 0em -2.6em 0em 0em #3b77c0,
+=======
+    box-shadow:
+      0em -2.6em 0em 0em #3b77c0,
+>>>>>>> 9613bb2b03e4cd30c2ddf754a2cf86155b979f4a
       1.8em -1.8em 0 0em rgba(51, 102, 204, 0.2),
       2.5em 0em 0 0em rgba(51, 102, 204, 0.2),
       1.75em 1.75em 0 0em rgba(51, 102, 204, 0.2),
@@ -976,8 +991,15 @@ main {
       -1.8em -1.8em 0 0em rgba(51, 102, 204, 0.7);
   }
   12.5% {
+<<<<<<< HEAD
     box-shadow: 0em -2.6em 0em 0em rgba(51, 102, 204, 0.7),
       1.8em -1.8em 0 0em #3b77c0, 2.5em 0em 0 0em rgba(51, 102, 204, 0.2),
+=======
+    box-shadow:
+      0em -2.6em 0em 0em rgba(51, 102, 204, 0.7),
+      1.8em -1.8em 0 0em #3b77c0,
+      2.5em 0em 0 0em rgba(51, 102, 204, 0.2),
+>>>>>>> 9613bb2b03e4cd30c2ddf754a2cf86155b979f4a
       1.75em 1.75em 0 0em rgba(51, 102, 204, 0.2),
       0em 2.5em 0 0em rgba(51, 102, 204, 0.2),
       -1.8em 1.8em 0 0em rgba(51, 102, 204, 0.2),
@@ -985,8 +1007,15 @@ main {
       -1.8em -1.8em 0 0em rgba(51, 102, 204, 0.5);
   }
   25% {
+<<<<<<< HEAD
     box-shadow: 0em -2.6em 0em 0em rgba(51, 102, 204, 0.5),
       1.8em -1.8em 0 0em rgba(51, 102, 204, 0.7), 2.5em 0em 0 0em #3b77c0,
+=======
+    box-shadow:
+      0em -2.6em 0em 0em rgba(51, 102, 204, 0.5),
+      1.8em -1.8em 0 0em rgba(51, 102, 204, 0.7),
+      2.5em 0em 0 0em #3b77c0,
+>>>>>>> 9613bb2b03e4cd30c2ddf754a2cf86155b979f4a
       1.75em 1.75em 0 0em rgba(51, 102, 204, 0.2),
       0em 2.5em 0 0em rgba(51, 102, 204, 0.2),
       -1.8em 1.8em 0 0em rgba(51, 102, 204, 0.2),
@@ -994,49 +1023,96 @@ main {
       -1.8em -1.8em 0 0em rgba(51, 102, 204, 0.2);
   }
   37.5% {
+<<<<<<< HEAD
     box-shadow: 0em -2.6em 0em 0em rgba(51, 102, 204, 0.2),
       1.8em -1.8em 0 0em rgba(51, 102, 204, 0.5),
       2.5em 0em 0 0em rgba(51, 102, 204, 0.7), 1.75em 1.75em 0 0em #3b77c0,
+=======
+    box-shadow:
+      0em -2.6em 0em 0em rgba(51, 102, 204, 0.2),
+      1.8em -1.8em 0 0em rgba(51, 102, 204, 0.5),
+      2.5em 0em 0 0em rgba(51, 102, 204, 0.7),
+      1.75em 1.75em 0 0em #3b77c0,
+>>>>>>> 9613bb2b03e4cd30c2ddf754a2cf86155b979f4a
       0em 2.5em 0 0em rgba(51, 102, 204, 0.2),
       -1.8em 1.8em 0 0em rgba(51, 102, 204, 0.2),
       -2.6em 0em 0 0em rgba(51, 102, 204, 0.2),
       -1.8em -1.8em 0 0em rgba(51, 102, 204, 0.2);
   }
   50% {
+<<<<<<< HEAD
     box-shadow: 0em -2.6em 0em 0em rgba(51, 102, 204, 0.2),
       1.8em -1.8em 0 0em rgba(51, 102, 204, 0.2),
       2.5em 0em 0 0em rgba(51, 102, 204, 0.5),
       1.75em 1.75em 0 0em rgba(51, 102, 204, 0.7), 0em 2.5em 0 0em #3b77c0,
+=======
+    box-shadow:
+      0em -2.6em 0em 0em rgba(51, 102, 204, 0.2),
+      1.8em -1.8em 0 0em rgba(51, 102, 204, 0.2),
+      2.5em 0em 0 0em rgba(51, 102, 204, 0.5),
+      1.75em 1.75em 0 0em rgba(51, 102, 204, 0.7),
+      0em 2.5em 0 0em #3b77c0,
+>>>>>>> 9613bb2b03e4cd30c2ddf754a2cf86155b979f4a
       -1.8em 1.8em 0 0em rgba(51, 102, 204, 0.2),
       -2.6em 0em 0 0em rgba(51, 102, 204, 0.2),
       -1.8em -1.8em 0 0em rgba(51, 102, 204, 0.2);
   }
   62.5% {
+<<<<<<< HEAD
     box-shadow: 0em -2.6em 0em 0em rgba(51, 102, 204, 0.2),
       1.8em -1.8em 0 0em rgba(51, 102, 204, 0.2),
       2.5em 0em 0 0em rgba(51, 102, 204, 0.2),
       1.75em 1.75em 0 0em rgba(51, 102, 204, 0.5),
       0em 2.5em 0 0em rgba(51, 102, 204, 0.7), -1.8em 1.8em 0 0em #3b77c0,
+=======
+    box-shadow:
+      0em -2.6em 0em 0em rgba(51, 102, 204, 0.2),
+      1.8em -1.8em 0 0em rgba(51, 102, 204, 0.2),
+      2.5em 0em 0 0em rgba(51, 102, 204, 0.2),
+      1.75em 1.75em 0 0em rgba(51, 102, 204, 0.5),
+      0em 2.5em 0 0em rgba(51, 102, 204, 0.7),
+      -1.8em 1.8em 0 0em #3b77c0,
+>>>>>>> 9613bb2b03e4cd30c2ddf754a2cf86155b979f4a
       -2.6em 0em 0 0em rgba(51, 102, 204, 0.2),
       -1.8em -1.8em 0 0em rgba(51, 102, 204, 0.2);
   }
   75% {
+<<<<<<< HEAD
     box-shadow: 0em -2.6em 0em 0em rgba(51, 102, 204, 0.2),
+=======
+    box-shadow:
+      0em -2.6em 0em 0em rgba(51, 102, 204, 0.2),
+>>>>>>> 9613bb2b03e4cd30c2ddf754a2cf86155b979f4a
       1.8em -1.8em 0 0em rgba(51, 102, 204, 0.2),
       2.5em 0em 0 0em rgba(51, 102, 204, 0.2),
       1.75em 1.75em 0 0em rgba(51, 102, 204, 0.2),
       0em 2.5em 0 0em rgba(51, 102, 204, 0.5),
+<<<<<<< HEAD
       -1.8em 1.8em 0 0em rgba(51, 102, 204, 0.7), -2.6em 0em 0 0em #3b77c0,
       -1.8em -1.8em 0 0em rgba(51, 102, 204, 0.2);
   }
   87.5% {
     box-shadow: 0em -2.6em 0em 0em rgba(51, 102, 204, 0.2),
+=======
+      -1.8em 1.8em 0 0em rgba(51, 102, 204, 0.7),
+      -2.6em 0em 0 0em #3b77c0,
+      -1.8em -1.8em 0 0em rgba(51, 102, 204, 0.2);
+  }
+  87.5% {
+    box-shadow:
+      0em -2.6em 0em 0em rgba(51, 102, 204, 0.2),
+>>>>>>> 9613bb2b03e4cd30c2ddf754a2cf86155b979f4a
       1.8em -1.8em 0 0em rgba(51, 102, 204, 0.2),
       2.5em 0em 0 0em rgba(51, 102, 204, 0.2),
       1.75em 1.75em 0 0em rgba(51, 102, 204, 0.2),
       0em 2.5em 0 0em rgba(51, 102, 204, 0.2),
       -1.8em 1.8em 0 0em rgba(51, 102, 204, 0.5),
+<<<<<<< HEAD
       -2.6em 0em 0 0em rgba(51, 102, 204, 0.7), -1.8em -1.8em 0 0em #3b77c0;
+=======
+      -2.6em 0em 0 0em rgba(51, 102, 204, 0.7),
+      -1.8em -1.8em 0 0em #3b77c0;
+>>>>>>> 9613bb2b03e4cd30c2ddf754a2cf86155b979f4a
   }
 }
 
