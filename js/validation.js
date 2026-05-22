@@ -17,11 +17,13 @@ const pristineConfig = new Pristine(imageUploadForm, {
 const normalizeHashtags = (value) => value.trim().toLowerCase().split(/\s+/).filter(Boolean);
 
 function validateHashtagFormat(value) {
-  if (!value) { return true };
+  if (!value) {
+    return true;
+  }
 
   const hashtags = normalizeHashtags(value);
 
-  return hashtags.every(tag => VALID_HASHTAG_REGEXP.test(tag));
+  return hashtags.every((tag) => VALID_HASHTAG_REGEXP.test(tag));
 }
 
 function validateHashtagCount(value) {

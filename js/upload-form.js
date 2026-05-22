@@ -44,16 +44,3 @@ imageUploadCancel.addEventListener('click', () => {
   closeUploadOverlay();
 });
 
-imageUploadForm.addEventListener('submit', (evt) => {
-  evt.preventDefault();
-
-  const isValid = pristineConfig.validate();
-
-  if (isValid) {
-    console.log('Форма полностью валидна! Можно отправлять на сервер.');
-  } else {
-    console.log('Форма не валидна!');
-  }
-});
-
-
