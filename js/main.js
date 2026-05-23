@@ -1,11 +1,21 @@
-import { photosData } from './mock';
+import { getData } from './api';
+import { showDataErrorMessage } from './alert-message';
 import { renderThumbnails } from './photos';
 import { renderBigPicture } from './big-picture';
 import './upload-form.js';
 import './image-effects.js';
 
+let picturesList = [];
 
-renderThumbnails(photosData);
+getData()
+  .then((pictures) => {
+    picturesList = pictures;
+    renderThumbnails(pictures);
+  })
+  .catch(() => {
+    showDataErrorMessage();
+  });
+
 
 document.body.addEventListener('click', (evt) => {
   const pictureNode = evt.target.closest('.picture');
@@ -17,7 +27,7 @@ document.body.addEventListener('click', (evt) => {
   evt.preventDefault();
 
   const photoId = pictureNode.dataset.id;
-  const currentPhoto = photosData.find((photo) => photo.id === Number(photoId));
+  const currentPhoto = picturesList.find((photo) => photo.id === Number(photoId));
 
   if (currentPhoto) {
     renderBigPicture(currentPhoto);
