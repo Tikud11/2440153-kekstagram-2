@@ -51,7 +51,7 @@ export const initComments = (comments) => {
 };
 
 commentsLoader.addEventListener('click', () => {
-  let previousCommentsCount = currentCommentsCount;
+  const previousCommentsCount = currentCommentsCount;
 
   currentCommentsCount = Math.min(currentListComments.length, currentCommentsCount + MAX_COMMENTS_VIEW);
 

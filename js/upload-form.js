@@ -1,9 +1,17 @@
+import { sendData } from './api';
 import { isEscapeKey } from './utils';
 import { pristineConfig } from './validation';
+import { showErrorDownloadMessage, showSuccessMessage } from './alert-message';
+
+const submitButtonText = {
+  IDLE: 'Опубликовать',
+  SENDING: 'Публикую...'
+};
 
 const body = document.querySelector('body');
 const imageUploadForm = document.querySelector('.img-upload__form');
 
+const submitButton = imageUploadForm.querySelector('.img-upload__submit');
 const imageUploadInput = imageUploadForm.querySelector('.img-upload__input');
 const imageUploadOverlay = imageUploadForm.querySelector('.img-upload__overlay');
 const imageUploadCancel = imageUploadOverlay.querySelector('.img-upload__cancel');
@@ -20,6 +28,16 @@ const closeUploadOverlay = () => {
   imageUploadForm.reset();
   pristineConfig.reset();
   document.removeEventListener('keydown', onUploadKeydown);
+};
+
+const blockSubmitButton = () => {
+  submitButton.disabled = true;
+  submitButton.textContent = submitButtonText.SENDING;
+};
+
+const unBlockSubmitButton = () => {
+  submitButton.disabled = false;
+  submitButton.textContent = submitButtonText.IDLE;
 };
 
 const openUploadOverlay = () => {
@@ -46,14 +64,25 @@ imageUploadCancel.addEventListener('click', () => {
 
 imageUploadForm.addEventListener('submit', (evt) => {
   evt.preventDefault();
-
+  blockSubmitButton();
   const isValid = pristineConfig.validate();
 
   if (isValid) {
-    console.log('Форма полностью валидна! Можно отправлять на сервер.');
-  } else {
-    console.log('Форма не валидна!');
+    const formData = new FormData(evt.target);
+
+    sendData(formData)
+      .then(() => {
+        closeUploadOverlay();
+        showSuccessMessage();
+      })
+
+      .catch(() => {
+        showErrorDownloadMessage();
+      })
+
+      .finally(() => {
+        unBlockSubmitButton();
+      });
   }
+
 });
-
-
