@@ -2,6 +2,8 @@ import { getData } from './api';
 import { showDataErrorMessage } from './alert-message';
 import { renderThumbnails } from './photos';
 import { renderBigPicture } from './big-picture';
+import { initFilters } from './filters';
+
 import './upload-form.js';
 import './image-effects.js';
 
@@ -11,6 +13,7 @@ getData()
   .then((pictures) => {
     picturesList = pictures;
     renderThumbnails(pictures);
+    initFilters(pictures);
   })
   .catch(() => {
     showDataErrorMessage();
